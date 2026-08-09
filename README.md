@@ -1,10 +1,10 @@
 # Parallel Computing Lab
 
-A learning-focused project to master CPU parallel programming with OpenMP and MPI.
+CPU parallel programming with OpenMP and MPI.
 
-## 🎯 Learning Goals
+## Goals
 
-By completing this project, you will understand:
+This repo covers:
 - Parallel programming concepts (threads, processes, synchronization)
 - OpenMP for shared-memory parallelism
 - MPI for distributed-memory parallelism (future)
