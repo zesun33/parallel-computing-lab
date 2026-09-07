@@ -128,8 +128,8 @@ for (int i = 0; i < M; i++) {
 Try the following in order:
 1. [01_hello_parallel.cpp](../openmp/01_hello_parallel.cpp)
 2. [02_parallel_for.cpp](../openmp/02_parallel_for.cpp)
-3. [03_reduction.cpp](../openmp/03_reduction.cpp)
+3. `openmp/03_reduction.cpp` (planned)
 
 ## Next Step
 
-→ Proceed to [02_parallel_patterns.md](02_parallel_patterns.md)
+→ Next notes (`02_parallel_patterns.md`, etc.) are planned; continue with the OpenMP examples above.
