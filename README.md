@@ -1,5 +1,26 @@
 # Parallel Computing Lab
 
+<!-- BEGIN GENERATED PROJECT GUIDE -->
+
+## Purpose and first steps
+
+Learn CPU parallelism by completing OpenMP exercises.
+
+**Who it is for:** Learners moving from serial CPU code to OpenMP parallel regions and loops.
+
+**First task:** Read the OpenMP notes and uncomment the first exercise one section at a time.
+
+**What to expect:** Thread output and loop-timing experiments after completing the marked sections.
+
+**Current scope:** Two OpenMP exercises with commented-out parallel sections. Reductions, synchronization, MPI, and measured scaling studies are future work.
+
+**Start here:** [OpenMP basics](notes/01_openmp_basics.md).
+
+**Related projects:** [cuda-gemm-optimization](https://github.com/zesun33/cuda-gemm-optimization), [rust-systems-track](https://github.com/zesun33/personal-projects/tree/main/rust-systems-track).
+
+[Choose another project](https://github.com/zesun33/personal-projects/blob/main/GETTING_STARTED.md).
+<!-- END GENERATED PROJECT GUIDE -->
+
 CPU parallel programming with OpenMP and MPI.
 
 ## Goals
@@ -27,8 +48,8 @@ This repo covers:
 
 | # | File | Concept | Prereq Notes | Status |
 |---|------|---------|--------------|--------|
-| 1 | [01_hello_parallel.cpp](openmp/01_hello_parallel.cpp) | Basic parallel region | 0, 1 | done |
-| 2 | [02_parallel_for.cpp](openmp/02_parallel_for.cpp) | Parallel loops | 1 | done |
+| 1 | [01_hello_parallel.cpp](openmp/01_hello_parallel.cpp) | Basic parallel region | 0, 1 | exercise |
+| 2 | [02_parallel_for.cpp](openmp/02_parallel_for.cpp) | Parallel loops | 1 | exercise |
 | 3 | `openmp/03_reduction.cpp` | Reduction patterns | 1, 2 | planned |
 | 4 | `openmp/04_critical_atomic.cpp` | Synchronization | 1 | planned |
 | 5 | `openmp/05_gemm_openmp.cpp` | Parallel GEMM | 1, 2, 3 | planned |
@@ -44,13 +65,15 @@ This repo covers:
 
 ## Build & Run
 
+The source files contain exercises: their parallel regions/loops are commented out. Initially the programs print serial output and TODO guidance. Uncomment one section, rebuild, and then compare thread counts; the current files do not establish a measured parallel speedup.
+
 ```bash
 # Build available OpenMP examples
 make openmp
 
 # Run with different thread counts
-OMP_NUM_THREADS=1 ./bin/01_hello_parallel
-OMP_NUM_THREADS=4 ./bin/02_parallel_for
+OMP_NUM_THREADS=1 ./bin/omp_01_hello_parallel
+OMP_NUM_THREADS=4 ./bin/omp_02_parallel_for
 ```
 
 ## Prerequisites
